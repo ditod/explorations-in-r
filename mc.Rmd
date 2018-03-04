@@ -1,0 +1,32 @@
+---
+title: "Монте Карло симулации"
+output: html_notebook
+---
+
+```{r}
+estPi <- function(N){
+  x <- 2*runif(N)-1
+  y <- 2*runif(N)-1
+  h <- sum(x^2+y^2<=1)
+  return (4*h/N)
+}
+
+set.seed(55555)
+estPi(1000)
+```
+```{r}
+estPi(1000)
+```
+
+```{r}
+estPi(1000)
+```
+
+```{r}
+estPi (1000000)
+```
+
+```{r}
+pi
+```
+
